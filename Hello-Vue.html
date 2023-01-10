@@ -3,5 +3,19 @@
 <div id="app">
   {{ message }}
 </div>
+// vue 3.0 with composition API style
+  const {createApp,ref} =vue;
   
+       const vm = createApp({
+       setup() {
+       const message = ref("Hello Vue 3.0!");
+       return {
+          message
+  }
+  }
+  })
+  
+  //mount
+  vm.mount('#app');
+ 
 </html>
